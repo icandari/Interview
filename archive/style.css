@@ -1,0 +1,94 @@
+
+/* justify-content always works along the main axis (the direction specified by flex-direction) */
+/* align-items always works along the cross axis (perpendicular to the main axis) */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    
+    padding: 10px 0px;
+    background-color: rgb(255, 255, 255);
+    display: flex; /*enables flex box*/
+    flex-direction: row; /*puts elements left to right*/
+    align-items: center; /*centers it withint the row*/
+    box-shadow: 0 -2px 10px rgb(164, 164, 164);
+    position: relative; /*any children of this class use this class as a reference point*/
+    
+}
+
+.header a img{
+    max-height: 50px; /*set max height of img*/
+    margin-left: 20px;
+}
+
+.menu-options{
+    margin-left: 20px
+}
+
+.menu-options a {
+    margin-right: 10px
+}
+
+.highlight-picture img {
+    width: 100%;
+    height: 40vh; /* Fixed height */
+    object-fit: cover; /* Crops image while maintaining aspect ratio */
+    object-position: center; /* Centers the image */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5%; /*shorthand for 0 on top and bottom, 20 left and right*/
+    justify-content: center; /*controls the alignemnt concurrent with the axis*/
+    align-items: center;
+
+    
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers children horizontally */
+    margin-top: 50px;
+    
+
+}
+
+#calculate-button {
+    max-width: 30%;
+}
+
+#operator-sign {
+    display: flex;
+    flex-direction: column;
+   
+    max-height: 30px;
+    justify-content: center;
+    
+}
+
+.add-box-1, .add-box-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5% 0 5%;
+    text-align: center;
+    background-color: rgb(232, 232, 232);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.add-box-1 span, .add-box-2 span {
+    margin-bottom: 10px;
+}
+
+.test-input {
+    display: block;
+    
+    
+    
+}
